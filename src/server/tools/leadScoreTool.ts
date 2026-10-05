@@ -14,3 +14,5 @@ export const LeadScoreOutput = z.object({
 
 export type LeadScoreInputType = z.infer<typeof LeadScoreInput>;
 export type LeadScoreOutputType = z.infer<typeof LeadScoreOutput>;
+
+

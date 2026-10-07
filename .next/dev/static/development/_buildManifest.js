@@ -1,4 +1,7 @@
 self.__BUILD_MANIFEST = {
+  "/_error": [
+    "static/chunks/pages/_error.js"
+  ],
   "/tools/lead-score-runner": [
     "static/chunks/pages/tools/lead-score-runner.js"
   ],

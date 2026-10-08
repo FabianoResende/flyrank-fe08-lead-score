@@ -19,36 +19,17 @@ __turbopack_context__.s([
     "default",
     ()=>handler
 ]);
-var __TURBOPACK__imported__module__$5b$externals$5d2f$express$2d$rate$2d$limit__$5b$external$5d$__$28$express$2d$rate$2d$limit$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f$express$2d$rate$2d$limit$29$__ = __turbopack_context__.i("[externals]/express-rate-limit [external] (express-rate-limit, esm_import, [project]/node_modules/express-rate-limit)");
 var __TURBOPACK__imported__module__$5b$externals$5d2f$zod__$5b$external$5d$__$28$zod$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f$zod$29$__ = __turbopack_context__.i("[externals]/zod [external] (zod, esm_import, [project]/node_modules/zod)");
 var __turbopack_async_dependencies__ = __turbopack_handle_async_dependencies__([
-    __TURBOPACK__imported__module__$5b$externals$5d2f$express$2d$rate$2d$limit__$5b$external$5d$__$28$express$2d$rate$2d$limit$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f$express$2d$rate$2d$limit$29$__,
     __TURBOPACK__imported__module__$5b$externals$5d2f$zod__$5b$external$5d$__$28$zod$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f$zod$29$__
 ]);
-[__TURBOPACK__imported__module__$5b$externals$5d2f$express$2d$rate$2d$limit__$5b$external$5d$__$28$express$2d$rate$2d$limit$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f$express$2d$rate$2d$limit$29$__, __TURBOPACK__imported__module__$5b$externals$5d2f$zod__$5b$external$5d$__$28$zod$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f$zod$29$__] = __turbopack_async_dependencies__.then ? (await __turbopack_async_dependencies__)() : __turbopack_async_dependencies__;
-;
+[__TURBOPACK__imported__module__$5b$externals$5d2f$zod__$5b$external$5d$__$28$zod$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f$zod$29$__] = __turbopack_async_dependencies__.then ? (await __turbopack_async_dependencies__)() : __turbopack_async_dependencies__;
 ;
 const leadScoreInputSchema = __TURBOPACK__imported__module__$5b$externals$5d2f$zod__$5b$external$5d$__$28$zod$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f$zod$29$__["z"].object({
     name: __TURBOPACK__imported__module__$5b$externals$5d2f$zod__$5b$external$5d$__$28$zod$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f$zod$29$__["z"].string().min(1),
     email: __TURBOPACK__imported__module__$5b$externals$5d2f$zod__$5b$external$5d$__$28$zod$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f$zod$29$__["z"].string().email(),
     message: __TURBOPACK__imported__module__$5b$externals$5d2f$zod__$5b$external$5d$__$28$zod$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f$zod$29$__["z"].string().min(1)
 });
-const limiter = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$express$2d$rate$2d$limit__$5b$external$5d$__$28$express$2d$rate$2d$limit$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f$express$2d$rate$2d$limit$29$__["default"])({
-    windowMs: 60_000,
-    max: 30,
-    keyGenerator: (req)=>{
-        return req.headers["x-forwarded-for"] || req.socket?.remoteAddress || "local-dev";
-    },
-    skipFailedRequests: true
-});
-function applyRateLimit(req, res) {
-    return new Promise((resolve, reject)=>{
-        limiter(req, res, (result)=>{
-            if (result instanceof Error) reject(result);
-            else resolve(result);
-        });
-    });
-}
 async function handler(req, res) {
     if (req.method !== "POST") {
         return res.status(405).json({
@@ -56,7 +37,6 @@ async function handler(req, res) {
         });
     }
     try {
-        await applyRateLimit(req, res);
         const parsed = leadScoreInputSchema.parse(req.body);
         const nameLength = parsed.name.length;
         const messageLength = parsed.message.length;

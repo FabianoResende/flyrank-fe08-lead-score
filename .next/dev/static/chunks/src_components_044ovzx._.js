@@ -11,8 +11,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx
 function LeadScoreErrorCard({ message, onRetry }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         style: {
-            border: "1px solid #fee2e2",
-            background: "#fff7f7",
+            border: "1px solid #fecaca",
+            background: "#fef2f2",
             padding: 20,
             borderRadius: 8
         },
@@ -22,43 +22,37 @@ function LeadScoreErrorCard({ message, onRetry }) {
                     marginTop: 0,
                     color: "#b91c1c"
                 },
-                children: "Error"
+                children: "Não foi possível executar a análise"
             }, void 0, false, {
                 fileName: "[project]/src/components/LeadScoreErrorCard.tsx",
-                lineNumber: 6,
+                lineNumber: 19,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                 style: {
-                    marginBottom: 12
+                    marginBottom: 16
                 },
                 children: message
             }, void 0, false, {
                 fileName: "[project]/src/components/LeadScoreErrorCard.tsx",
-                lineNumber: 7,
+                lineNumber: 28,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                    onClick: onRetry,
-                    style: {
-                        padding: "8px 12px"
-                    },
-                    children: "Back"
-                }, void 0, false, {
-                    fileName: "[project]/src/components/LeadScoreErrorCard.tsx",
-                    lineNumber: 9,
-                    columnNumber: 9
-                }, this)
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                onClick: onRetry,
+                style: {
+                    padding: "8px 12px"
+                },
+                children: "Tentar novamente"
             }, void 0, false, {
                 fileName: "[project]/src/components/LeadScoreErrorCard.tsx",
-                lineNumber: 8,
+                lineNumber: 36,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/LeadScoreErrorCard.tsx",
-        lineNumber: 5,
+        lineNumber: 11,
         columnNumber: 5
     }, this);
 }
@@ -113,6 +107,18 @@ function LeadScoreInputCard({ onRun }) {
                 lineNumber: 15,
                 columnNumber: 7
             }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                style: {
+                    margin: "0 0 16px",
+                    color: "#4b5563",
+                    fontSize: 14
+                },
+                children: "Nenhuma análise executada ainda. Preencha os dados abaixo para testar a ferramenta."
+            }, void 0, false, {
+                fileName: "[project]/src/components/LeadScoreInputCard.tsx",
+                lineNumber: 19,
+                columnNumber: 1
+            }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                 style: {
                     display: "block",
@@ -126,7 +132,7 @@ function LeadScoreInputCard({ onRun }) {
                         children: "Name"
                     }, void 0, false, {
                         fileName: "[project]/src/components/LeadScoreInputCard.tsx",
-                        lineNumber: 17,
+                        lineNumber: 30,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -139,13 +145,13 @@ function LeadScoreInputCard({ onRun }) {
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/components/LeadScoreInputCard.tsx",
-                        lineNumber: 18,
+                        lineNumber: 31,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/LeadScoreInputCard.tsx",
-                lineNumber: 16,
+                lineNumber: 29,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -161,7 +167,7 @@ function LeadScoreInputCard({ onRun }) {
                         children: "Email"
                     }, void 0, false, {
                         fileName: "[project]/src/components/LeadScoreInputCard.tsx",
-                        lineNumber: 21,
+                        lineNumber: 34,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -175,13 +181,13 @@ function LeadScoreInputCard({ onRun }) {
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/components/LeadScoreInputCard.tsx",
-                        lineNumber: 22,
+                        lineNumber: 35,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/LeadScoreInputCard.tsx",
-                lineNumber: 20,
+                lineNumber: 33,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -197,7 +203,7 @@ function LeadScoreInputCard({ onRun }) {
                         children: "Message"
                     }, void 0, false, {
                         fileName: "[project]/src/components/LeadScoreInputCard.tsx",
-                        lineNumber: 25,
+                        lineNumber: 38,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -210,13 +216,13 @@ function LeadScoreInputCard({ onRun }) {
                         rows: 3
                     }, void 0, false, {
                         fileName: "[project]/src/components/LeadScoreInputCard.tsx",
-                        lineNumber: 26,
+                        lineNumber: 39,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/LeadScoreInputCard.tsx",
-                lineNumber: 24,
+                lineNumber: 37,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -233,7 +239,7 @@ function LeadScoreInputCard({ onRun }) {
                         children: "Run"
                     }, void 0, false, {
                         fileName: "[project]/src/components/LeadScoreInputCard.tsx",
-                        lineNumber: 29,
+                        lineNumber: 42,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -249,13 +255,13 @@ function LeadScoreInputCard({ onRun }) {
                         children: "Clear"
                     }, void 0, false, {
                         fileName: "[project]/src/components/LeadScoreInputCard.tsx",
-                        lineNumber: 30,
+                        lineNumber: 43,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/LeadScoreInputCard.tsx",
-                lineNumber: 28,
+                lineNumber: 41,
                 columnNumber: 7
             }, this)
         ]
@@ -287,44 +293,58 @@ function LeadScoreLoadingCard() {
         style: {
             border: "1px solid #e5e7eb",
             padding: 20,
-            borderRadius: 8,
-            textAlign: "center"
+            borderRadius: 8
         },
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                role: "status",
-                "aria-live": "polite",
                 style: {
-                    marginBottom: 8
-                },
-                children: "Running tool…"
+                    height: 30,
+                    width: "40%",
+                    background: "#e5e7eb",
+                    borderRadius: 4,
+                    marginBottom: 16
+                }
             }, void 0, false, {
                 fileName: "[project]/src/components/LeadScoreLoadingCard.tsx",
-                lineNumber: 6,
+                lineNumber: 12,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 style: {
-                    height: 8,
+                    height: 20,
+                    width: "80%",
                     background: "#f3f4f6",
                     borderRadius: 4,
-                    overflow: "hidden"
-                },
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    style: {
-                        width: "40%",
-                        height: "100%",
-                        background: "#60a5fa",
-                        transition: "width 400ms ease"
-                    }
-                }, void 0, false, {
-                    fileName: "[project]/src/components/LeadScoreLoadingCard.tsx",
-                    lineNumber: 8,
-                    columnNumber: 9
-                }, this)
+                    marginBottom: 12
+                }
             }, void 0, false, {
                 fileName: "[project]/src/components/LeadScoreLoadingCard.tsx",
-                lineNumber: 7,
+                lineNumber: 22,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                style: {
+                    height: 20,
+                    width: "60%",
+                    background: "#f3f4f6",
+                    borderRadius: 4,
+                    marginBottom: 12
+                }
+            }, void 0, false, {
+                fileName: "[project]/src/components/LeadScoreLoadingCard.tsx",
+                lineNumber: 32,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                style: {
+                    height: 20,
+                    width: "70%",
+                    background: "#f3f4f6",
+                    borderRadius: 4
+                }
+            }, void 0, false, {
+                fileName: "[project]/src/components/LeadScoreLoadingCard.tsx",
+                lineNumber: 42,
                 columnNumber: 7
             }, this)
         ]
@@ -467,12 +487,17 @@ function LeadScoreRunner() {
     const [input, setInput] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const [output, setOutput] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const [errorMsg, setErrorMsg] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [lastPayload, setLastPayload] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useState"])(null);
     async function runTool(payload) {
         setInput(payload);
+        setLastPayload(payload);
         setState("loading");
         setErrorMsg(null);
         setOutput(null);
         try {
+            if (!navigator.onLine) {
+                throw new Error("Sem conexão com a internet.");
+            }
             const res = await fetch("/api/tools/lead-score", {
                 method: "POST",
                 headers: {
@@ -481,12 +506,16 @@ function LeadScoreRunner() {
                 body: JSON.stringify(payload)
             });
             const data = await res.json();
+            if (res.status === 429) {
+                setErrorMsg("Muitas tentativas. Aguarde alguns segundos e tente novamente.");
+                setState("error");
+                return;
+            }
             if (!res.ok) {
                 setErrorMsg(data?.error ?? "Unknown error");
                 setState("error");
                 return;
             }
-            // Basic runtime validation
             if (typeof data.score !== "number" || !data.category || !Array.isArray(data.reasons)) {
                 setErrorMsg("Invalid tool response shape");
                 setState("error");
@@ -499,6 +528,10 @@ function LeadScoreRunner() {
             setState("error");
         }
     }
+    async function retryLastRequest() {
+        if (!lastPayload) return;
+        await runTool(lastPayload);
+    }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         style: {
             maxWidth: 720,
@@ -510,12 +543,12 @@ function LeadScoreRunner() {
                 onRun: runTool
             }, void 0, false, {
                 fileName: "[project]/src/components/LeadScoreRunner.tsx",
-                lineNumber: 54,
+                lineNumber: 79,
                 columnNumber: 28
             }, this),
             state === "loading" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$LeadScoreLoadingCard$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/components/LeadScoreRunner.tsx",
-                lineNumber: 55,
+                lineNumber: 80,
                 columnNumber: 31
             }, this),
             state === "success" && output && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$LeadScoreResultCard$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__["default"], {
@@ -523,25 +556,25 @@ function LeadScoreRunner() {
                 onBack: ()=>setState("idle")
             }, void 0, false, {
                 fileName: "[project]/src/components/LeadScoreRunner.tsx",
-                lineNumber: 56,
+                lineNumber: 81,
                 columnNumber: 41
             }, this),
             state === "error" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$LeadScoreErrorCard$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                 message: errorMsg ?? "Erro desconhecido",
-                onRetry: ()=>setState("idle")
+                onRetry: retryLastRequest
             }, void 0, false, {
                 fileName: "[project]/src/components/LeadScoreRunner.tsx",
-                lineNumber: 57,
+                lineNumber: 82,
                 columnNumber: 29
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/LeadScoreRunner.tsx",
-        lineNumber: 53,
+        lineNumber: 78,
         columnNumber: 5
     }, this);
 }
-_s(LeadScoreRunner, "uj1NjHsYVVwuEgNeLQIB0KbiK/E=");
+_s(LeadScoreRunner, "NmBl6Rh+E9opf2dHUn2+6n8MaXw=");
 _c = LeadScoreRunner;
 var _c;
 __turbopack_context__.k.register(_c, "LeadScoreRunner");

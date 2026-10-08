@@ -12,7 +12,20 @@ export default function LeadScoreInputCard({ onRun }: { onRun: (payload: { name:
 
   return (
     <form onSubmit={handleSubmit} aria-label="Lead score form" style={{ border: "1px solid #e5e7eb", padding: 20, borderRadius: 8 }}>
-      <h2 style={{ margin: "0 0 12px" }}>Run Lead Score Tool</h2>
+      <h2 style={{ margin: "0 0 12px" }}>
+  Run Lead Score Tool
+</h2>
+
+<p
+  style={{
+    margin: "0 0 16px",
+    color: "#4b5563",
+    fontSize: 14,
+  }}
+>
+  Nenhuma análise executada ainda.
+  Preencha os dados abaixo para testar a ferramenta.
+</p>
       <label style={{ display: "block", marginBottom: 8 }}>
         <div style={{ fontSize: 13 }}>Name</div>
         <input required value={name} onChange={e => setName(e.target.value)} style={{ width: "100%", padding: 8 }} />

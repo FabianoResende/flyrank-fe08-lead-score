@@ -1,13 +1,16 @@
 import React from "react";
 import dynamic from "next/dynamic";
 
-const LeadScoreRunner = dynamic(() => import("../../components/LeadScoreRunner"), { ssr: false });
+const ChatRunner = dynamic(
+  () => import("../../components/chat/ChatRunner"),
+  { ssr: false }
+);
 
 export default function Page() {
   return (
     <main style={{ padding: 24 }}>
-      <h1>Lead Score Tool Runner</h1>
-      <LeadScoreRunner />
+      <h1>Streaming Chat FE-06</h1>
+      <ChatRunner />
     </main>
   );
 }

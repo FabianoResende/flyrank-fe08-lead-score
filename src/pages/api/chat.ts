@@ -151,7 +151,7 @@ export default async function handler(
       }
 
       const textParts =
-        text.match(/\S+\s*/g) ?? [text];
+  text.match(/\s+|\S+/g) ?? [text];
 
       for (const textPart of textParts) {
         if (

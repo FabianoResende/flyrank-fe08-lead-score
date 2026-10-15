@@ -61,6 +61,12 @@ function isChatMessage(
   return validRole && validContent;
 }
 
+function wait(milliseconds: number): Promise<void> {
+  return new Promise((resolve) => {
+    setTimeout(resolve, milliseconds);
+  });
+}
+
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<ErrorResponse>
@@ -140,17 +146,48 @@ export default async function handler(
     for await (const chunk of stream) {
       const text = chunk.text;
 
-      if (text) {
-        res.write(text);
+      if (!text) {
+        continue;
+      }
+
+      const textParts =
+        text.match(/\S+\s*/g) ?? [text];
+
+      for (const textPart of textParts) {
+        if (
+          req.aborted ||
+          res.destroyed ||
+          res.writableEnded
+        ) {
+          return;
+        }
+
+        res.write(textPart);
+
+        await wait(80);
       }
     }
 
-    res.end();
+    if (
+      !req.aborted &&
+      !res.destroyed &&
+      !res.writableEnded
+    ) {
+      res.end();
+    }
   } catch (caughtError) {
     console.error(
       "Gemini streaming error:",
       caughtError
     );
+
+    if (
+      req.aborted ||
+      res.destroyed ||
+      res.writableEnded
+    ) {
+      return;
+    }
 
     if (!res.headersSent) {
       res.status(500).json({
